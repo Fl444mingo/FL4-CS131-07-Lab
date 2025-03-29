@@ -44,9 +44,11 @@ int main() {
         gradeList[pos] = grade;
         // Advance pointer position
         pos++;
-        sum += grade; // Add to running sum
+        // Update sum
+        sum += grade;
+        // New user input prompt
         cout << "Data: ";
-        cin >> name >> grade; // Get next number
+        cin >> name >> grade;
     } while (name != "Exit");
     // Clear screen for a blank slate to restate user input and display statistics
     system("cls");
